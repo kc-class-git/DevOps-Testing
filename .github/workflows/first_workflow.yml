@@ -1,0 +1,17 @@
+Name: First Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Out Repository
+        run: echo "Checking out repository"
+
+      - name: Run a one-line script
+        run: echo "Hello, World from Github Actions!"
